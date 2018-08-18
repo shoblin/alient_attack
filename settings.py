@@ -32,6 +32,7 @@ class Settings():
         # Bullet Settings
         self.bullet_speed_factor = 1
         self.bullet_img = 'img/bullet.bmp'
+        self.bullets_allowed = 3
 
 
 

@@ -29,5 +29,9 @@ class Settings():
         # Ship Settings
         self.ship_speed_factor =1.5
 
+        # Bullet Settings
+        self.bullet_speed_factor = 1
+        self.bullet_img = 'img/bullet.bmp'
+
 
 

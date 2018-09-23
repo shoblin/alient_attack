@@ -14,15 +14,6 @@ import pygame
 
 from bullet import Bullet
 
-def update_bullets(bullets):
-    """Update position of bullets and get rid of old  bullets"""
-    bullets.update()
-
-    # Get rid of  bullets that have disappeared from screen
-    for bullet in bullets.copy():
-        if bullet.rect.bottom <=0:
-            bullets.remove(bullet)
-
 def fire_bullet(ai_settings, screen, ship, bullets):
     """Fire a bullet if limit not reached yet."""
     # Create a new bullet and add it to the bullets group.
@@ -64,6 +55,15 @@ def check_keyup_events(event, ship):
         ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
+
+def update_bullets(bullets):
+    """Update position of bullets and get rid of old  bullets"""
+    bullets.update()
+
+    # Get rid of  bullets that have disappeared from screen
+    for bullet in bullets.copy():
+        if bullet.rect.bottom <=0:
+            bullets.remove(bullet)
 
 
 def update_screen(ai_settings, screen, ship, bullets):

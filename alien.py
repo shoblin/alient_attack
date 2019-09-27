@@ -16,7 +16,7 @@ class Alien(Sprite):
     """A Class of our enemies """
 
     def __init__(self, ai_settings, screen):
-        super.__init__()
+        super(Alien, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
 

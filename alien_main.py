@@ -31,14 +31,14 @@ def game_run():
 
     #Create a group within bullets
     bullets = Group()
-    #Create a alien's ship
+    #Create a alien's ship. Use Group from pygame.sprite.
     aliens = Group()
 
     #Start the main loop for the game
     while True:
         #Watch keyboard and mouse events
         gf.check_events(ai_settings, screen, ship, bullets)
-        gf.create_fleet(ai_settings, screen, aliens)
+        gf.create_fleet(ai_settings, screen, ship, aliens)
 
         ship.update()
         gf.update_bullets(bullets)

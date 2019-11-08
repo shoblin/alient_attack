@@ -27,12 +27,17 @@ class Settings():
         self.bg_color = (130, 130, 230)
 
         # Ship Settings
-        self.ship_speed_factor =7
+        self.ship_speed_factor =10
 
         # Bullet Settings
-        self.bullet_speed_factor = 5
+        self.bullet_speed_factor = 7
         self.bullet_img = 'img/bullet.bmp'
         self.bullets_allowed = 3
+
+        #Alien setting
+        self.alien_speed_factor = 1
+        self.fleet_drop_speed = 10
+        self.fleet_direction = 1
 
 
 
